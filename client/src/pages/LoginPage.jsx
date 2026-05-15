@@ -64,92 +64,69 @@ toast.success("Login successful");
 
 
   return (
-    <div
-      className="
-      min-h-screen
-      flex
-      items-center
-      justify-center
-      bg-slate-900
-      "
-    >
+<div className="min-h-screen flex items-center justify-center bg-gray-950 relative overflow-hidden font-sans">
+      
+      {/* Decorative AI-themed background glows */}
+      <div className="absolute top-[-10%] right-[-10%] w-96 h-96 bg-cyan-600/20 rounded-full blur-[120px] pointer-events-none"></div>
+      <div className="absolute bottom-[-10%] left-[-10%] w-96 h-96 bg-indigo-600/30 rounded-full blur-[120px] pointer-events-none"></div>
 
       <form
         onSubmit={handleSubmit}
-        className="
-        bg-slate-800
-        p-8
-        rounded-xl
-        w-[400px]
-        space-y-4
-        "
+        className="relative z-10 backdrop-blur-xl bg-white/5 p-10 rounded-3xl w-full max-w-md shadow-2xl border border-white/10 space-y-6"
       >
+        <div className="text-center space-y-2">
+          <h1 className="text-4xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400">
+            Welcome Back
+          </h1>
+          <p className="text-slate-400 text-sm">Log in to continue to AI Notes.</p>
+        </div>
 
-        <h1
-          className="
-          text-3xl
-          font-bold
-          text-center
-          "
-        >
-          Login
-        </h1>
+        <div className="space-y-4">
+          <div>
+            <label className="block text-sm font-medium text-slate-300 mb-1 ml-1">Email Address</label>
+            <input
+              type="email"
+              name="email"
+              placeholder="you@example.com"
+              onChange={handleChange}
+              className="w-full p-3.5 rounded-xl bg-white/5 border border-white/10 text-slate-200 placeholder-slate-500 outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 transition-all"
+              required
+            />
+          </div>
 
-        <input
-          type="email"
-          name="email"
-          placeholder="Email"
-          onChange={handleChange}
-          className="
-          w-full
-          p-3
-          rounded
-          bg-slate-700
-          outline-none
-          "
-        />
-
-        <input
-          type="password"
-          name="password"
-          placeholder="Password"
-          onChange={handleChange}
-          className="
-          w-full
-          p-3
-          rounded
-          bg-slate-700
-          outline-none
-          "
-        />
+          <div>
+            <div className="flex justify-between items-center mb-1 ml-1 mr-1">
+              <label className="block text-sm font-medium text-slate-300">Password</label>
+              <a href="#" className="text-xs text-indigo-400 hover:text-indigo-300 transition-colors">Forgot?</a>
+            </div>
+            <input
+              type="password"
+              name="password"
+              placeholder="••••••••"
+              onChange={handleChange}
+              className="w-full p-3.5 rounded-xl bg-white/5 border border-white/10 text-slate-200 placeholder-slate-500 outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 transition-all"
+              required
+            />
+          </div>
+        </div>
 
         <button
-          className="
-          w-full
-          bg-blue-600
-          p-3
-          rounded
-          font-semibold
-          "
+          type="submit"
+          className="w-full bg-gradient-to-r from-indigo-500 to-cyan-500 hover:from-indigo-400 hover:to-cyan-400 text-white p-3.5 rounded-xl font-bold shadow-lg shadow-indigo-500/25 transition-all transform hover:scale-[1.02] active:scale-95"
         >
-          Login
+          Log In
         </button>
 
-        <p className="text-center">
-
-          Don't have account?
-
+        <p className="text-center text-slate-400 text-sm">
+          Don't have an account?
           <Link
             to="/signup"
-            className="text-blue-400 ml-2"
+            className="text-cyan-400 font-semibold ml-1.5 hover:text-cyan-300 transition-colors"
           >
-            Signup
+            Sign up now
           </Link>
-
         </p>
-
       </form>
-
     </div>
   );
 }
