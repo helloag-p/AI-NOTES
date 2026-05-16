@@ -520,16 +520,33 @@ MongoDB Atlas
 
 ---
 
-# Demo Video Checklist
+# Screenshots
 
-The demo video includes:
+## Dashboard
 
-* Authentication Flow
-* Notes Workflow
-* AI Summary Generation
-* Search & Filtering
-* Public Sharing Flow
-* Dashboard Insights
+![Dashboard](./screenshots/Screenshot%20(682).png)
+
+---
+
+## AI Summary
+
+![AI Summary](./screenshots/Screenshot%20(683).png)
+
+---
+
+## Analytics Dashboard
+
+![Analytics](./screenshots/Screenshot%20(684).png)
+
+---
+
+## Shared Public Note
+
+![Shared Note](./screenshots/Screenshot%20(680).png)
+
+## Login
+
+![Login](./screenshots/Screenshot%20(681).png)
 
 ---
 
