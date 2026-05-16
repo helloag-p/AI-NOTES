@@ -226,12 +226,12 @@ function Editor() {
           <div>
             <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1">Public Share Link</p>
             <a
-              href={`http://localhost:5173/shared/${selectedNote.shareId}`}
+              href={`https://ai-notes-2te8.vercel.app/shared/${selectedNote.shareId}`}
               target="_blank"
               rel="noreferrer"
               className="text-cyan-400 hover:text-cyan-300 text-sm font-medium transition-colors break-all"
             >
-              {`http://localhost:5173/shared/${selectedNote.shareId}`}
+              {`https://ai-notes-2te8.vercel.app/shared/${selectedNote.shareId}`}
             </a>
           </div>
           <svg className="w-5 h-5 text-slate-500 group-hover:text-cyan-400 transition-colors cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
