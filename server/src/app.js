@@ -17,7 +17,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://ai-notes-tlnq.onrender.com/"
+      "https://ai-notes-2te8.vercel.app"
     ],
     credentials: true
   })
