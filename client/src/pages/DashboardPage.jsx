@@ -7,7 +7,7 @@ function DashboardPage() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <div className="flex flex-col md:flex-row h-screen bg-gray-950 text-white overflow-hidden font-sans relative">
+    <div className="flex flex-col md:flex-row h-screen bg-gray-950 text-white font-sans relative">
       
       <div className="md:hidden flex items-center justify-between p-4 bg-gray-900 border-b border-white/10 z-50 shrink-0 shadow-md">
         <div className="flex flex-col">
@@ -45,14 +45,14 @@ function DashboardPage() {
         ></div>
       )}
 
-      <div className="flex flex-col md:flex-row flex-1 overflow-y-auto md:overflow-hidden relative z-10">
+      <div className="flex flex-col md:flex-row flex-1 overflow-hidden relative z-10">
   {/* On mobile: standard height, allows scrolling. On desktop: fixed width, full height */}
   <div className="w-full min-h-[300px] md:h-full md:w-[360px] shrink-0 border-b md:border-b-0 md:border-r border-white/10 bg-gray-950/60">
     <NotesList />
   </div>
 
   {/* On mobile: takes remaining space, allows scrolling. On desktop: flex-1 full height */}
-  <div className="w-full md:h-full flex-1 bg-gray-950/30">
+  <div className="w-full md:h-full flex-1 bg-gray-950/30 overflow-y-auto">
     <Editor />
   </div>
 </div>
