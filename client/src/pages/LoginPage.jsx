@@ -97,7 +97,6 @@ toast.success("Login successful");
           <div>
             <div className="flex justify-between items-center mb-1 ml-1 mr-1">
               <label className="block text-sm font-medium text-slate-300">Password</label>
-              <a href="#" className="text-xs text-indigo-400 hover:text-indigo-300 transition-colors">Forgot?</a>
             </div>
             <input
               type="password"
